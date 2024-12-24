@@ -1,0 +1,9 @@
+.submitButton:invalid {
+  background-color: var(--button-inactive-bg);
+  cursor: not-allowed;
+}
+
+.submitButton:valid {
+  background-color: var(--button-active-bg);
+  cursor: pointer;
+}

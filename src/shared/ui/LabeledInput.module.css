@@ -1,0 +1,47 @@
+.label {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.labeledInput {
+  margin-bottom: 1.5rem;
+  padding: 0.9375rem 1.5rem;
+  outline: none;
+  height: 3.5rem;
+  background-color: var(--input-bg);
+  color: var(--default-color);
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.75rem;
+  border: 0.0625rem solid var(--input-border);
+}
+
+.labeledInput:focus {
+  border: 0.0625rem solid var(--input-focus-border);
+  filter: drop-shadow(var(--default-shadow));
+}
+
+.labeledInput:not(:focus):user-invalid {
+  border: 0.0625rem solid var(--input-invalid-border);
+}
+
+.labeledInput:not(:focus):user-valid {
+  border: 0.0625rem solid var(--input-valid-border);
+}
+
+.labeledInput[data-invalid]:is(.user-invalid) {
+  border: 0.0625rem solid var(--input-invalid-border) !important;
+}
+
+.labeledInput[type="password"]:not(:placeholder-shown) {
+  letter-spacing: 0.0625rem;
+  font: large Verdana, sans-serif;
+}
+
+.labeledInput:focus + .password-toggle {
+  filter: invert(45%) sepia(89%) saturate(1690%) hue-rotate(194deg) brightness(101%) contrast(101%);
+}
+
+.labeledInput::placeholder {
+  color: var(--input-placeholder-color);
+}

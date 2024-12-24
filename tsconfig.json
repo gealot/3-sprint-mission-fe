@@ -28,6 +28,8 @@
       "@app/*": ["src/app/*"],
       "@api": ["src/app/api"],
       "@api/*": ["src/app/api/*"],
+      "@contexts": ["src/app/contexts"],
+      "@contexts/*": ["src/app/contexts/*"],
       "@features": ["src/app/features"],
       "@features/*": ["src/app/features/*"],
       "@hooks": ["src/app/hooks"],
@@ -36,8 +38,8 @@
       "@lib/*": ["src/app/lib/*"],
       "@constants": ["src/app/lib/constants"],
       "@constants/*": ["src/app/lib/constants/*"],
-      "@swr": ["src/app/lib/swr"],
-      "@swr/*": ["src/app/lib/swr/*"],
+      "@swr": ["src/app/lib/react-query"],
+      "@swr/*": ["src/app/lib/react-query/*"],
       "@prisma": ["src/app/lib/prisma"],
       "@prisma/*": ["src/app/lib/prisma/*"],
       "@utils": ["src/app/lib/utils"],
@@ -72,7 +74,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/app/lib/react-query/index.tsㅌ"  ],
   "exclude": [
     "node_modules"
   ]

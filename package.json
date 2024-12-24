@@ -13,11 +13,14 @@
   },
   "dependencies": {
     "@prisma/client": "^6.1.0",
-    "next": "15.1.1",
+    "@tanstack/react-query": "^5.62.8",
+    "ky": "^1.7.4",
+    "next": "15.1.2",
     "prisma": "^6.1.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "swr": "^2.2.5"
+    "react-hook-form": "^7.54.1",
+    "react-toastify": "^11.0.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
@@ -28,7 +31,7 @@
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "eslint": "^9.17.0",
-    "eslint-config-next": "15.1.1",
+    "eslint-config-next": "15.1.2",
     "eslint-config-prettier": "^9.1.0",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",

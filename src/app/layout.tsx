@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import '@styles';
 import Footer from '@/components/layout/Footer/Footer';
 import Header from '@/components/layout/Header/Header';
+import ReactQueryProvider from '@contexts/ReactQueryProvider';
 
 const pretendard = localFont({
   src: './fonts/PretendardVariable.woff2',
@@ -35,9 +36,13 @@ export default function RootLayout({
       <body
         className={`${pretendard.variable} ${nanumsquareneo.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <ReactQueryProvider>
+          <Header />
+          <main className="flex justify-center flex-wrap">
+            {children}
+          </main>
+          <Footer />
+        </ReactQueryProvider>
       </body>
     </html>
   );
